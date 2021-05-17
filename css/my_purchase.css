@@ -70,6 +70,7 @@ a{
     justify-content: space-between;
     border-bottom: solid 1px #999999;
 }
+
 .title_wrap {
     height: 50px;
     display: flex;
@@ -81,7 +82,6 @@ a{
 .total_count {
     transform: translate(-12px, 26px);
 }
-
 .detail_box{
     height: 220px;
     width: 830px;
