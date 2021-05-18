@@ -57,7 +57,7 @@ a{
     line-height: 40px;
     color: #222222;
 }
-.menu_list li:nth-child(2) a {
+.menu_list li:nth-child(3) a {
     border: solid 1px rgb(123, 227, 251);
     background-color: rgb(123, 227, 251);
     color: white;
@@ -80,4 +80,27 @@ a{
 }
 .total_count {
     transform: translate(-12px, 26px);
+}
+.detail_box{
+    width: 390px;
+    height: 315px;
+    padding: 10px;
+    margin-bottom: 12px;
+    text-align: center;
+    display: inline-block;
+}
+.detail_img{
+    width: 280px;
+    height: 180px;
+    margin: 0 auto;
+    display: block;
+}
+.detail_title{
+    font-size: 20px;
+    font-weight: bold;
+}
+.detail_info{
+    font-size: 15px;
+    display: inline;
+    line-height: 27px;
 }
