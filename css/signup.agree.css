@@ -536,7 +536,6 @@ select::-ms-expand {
 .t .terms_box::-webkit-scrollbar-thumb {
     min-height: 20px;
     margin: 0 5px 0 0;
-    -webkit-border-radius: 5px;
     background-color: rgba(45, 70, 97, 0.3);
 }
 .t .terms_box::-webkit-scrollbar-thumb:hover {
