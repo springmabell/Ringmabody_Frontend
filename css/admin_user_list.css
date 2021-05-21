@@ -23,7 +23,7 @@
     width: 200px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:flex-end;
 }
 .my_page_logo{
     color: white;
@@ -31,7 +31,7 @@
 
 .content_wrap{
     width: 1100px;
-    height: 100%;
+    height: 800px;
     margin: auto;
     padding-top: 20px;
     display: flex;
@@ -39,9 +39,34 @@
 }
 .content {
     width: 80%;
-    height: 700px;
+    height: 500px;
     /* border: solid 1px #999999; */
 }
+select {
+    width: 200px;
+    padding: .8em .5em;
+    border: 1px solid #999;
+    font-family: inherit;
+    background: url('../img/arrow.jpeg') no-repeat 95% 50%;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+select::-ms-expand {
+    display: none;
+}
+.manage-name {
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:7%; 
+}
+.total-num {
+    font-size: 20px;
+}
+
 a{
     text-decoration: none;
     outline: none;
@@ -57,7 +82,7 @@ a{
     line-height: 40px;
     color: #222222;
 }
-.menu_list li:nth-child(2) a {
+.menu_list li:nth-child(1) a {
     border: solid 1px rgb(123, 227, 251);
     background-color: rgb(123, 227, 251);
     color: white;
@@ -67,7 +92,7 @@ a{
 }
 .info_wrap {
     width: 100%;
-    height: 1600px;
+    height: 500px;
 }
 .info_list {
     width: 100%;
@@ -135,92 +160,40 @@ a{
     border: skyblue solid 1px;
     border-radius: 2px;
 }
-.info_btn {
-    text-align: center;
+
+/* 페이지 넘버 css */
+
+div#page-num > ul {
+	list-style:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#page-num > ul li {
+	float:left;
+}
+div#page-num > ul li a {
+	float:left;
+	padding:4px;
+	margin-right:3px;
+	width:20px;
+	color:#000;
+	font:bold 12px tahoma;
+	border:1px solid #eee;
+	text-align:center;
+	text-decoration:none;
+}
+div#page-num > ul li a:hover, ul li a:focus {
+	color:#fff;
+	border:1px solid rgb(123, 227, 251);
+	background-color:rgb(123, 227, 251);
 }
 
 
-.btn {
-    outline: 0;
-    border: 0;
-    width: 60px;
-    height: 30px;
-    transform: translate(30px, 6px);
-    cursor: pointer;
-    border-radius: 2px;
-    background-color: deepskyblue;
-    color: white;
-}
-.btn:hover {
-    background-color: skyblue;
-}
-.btn_type {
-    display: block;
-    width: 100%;
-    padding: 15px 0 15px;
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    cursor: pointer;
-    box-sizing: border-box;
-}
-
-.btn_type:active,
-.btn_type:focus,
-.btn_type:hover {
-    text-decoration: none;
-}
-.btn_type + .btn_type {
-    margin-top: 10px;
-}
-
-
-.btn_area {
-    margin: 30px 0 9px;
-}
-.btn_area.double {
-    overflow: hidden;
-    margin: 29px -5px 0;
-}
-.btn_area.double > span {
-    display: block;
-    float: left;
-    width: 30%;
-}
-.btn_area.double span:before {
-    content: "";
-    display: block;
-    clear: both;
-}
-.btn_area > span .btn_type {
-    width: auto;
-    margin: 0 5px;
-}
-
-.btn_default {
-    color: #fff;
-    background-color: #8e8e8e;
-}
-.btn_primary {
-    color: #fff;
-    border: solid 1px rgba(0, 0, 0, 0.08);
-    background-color: rgb(123, 227, 251);
-}
+/* validation */
 
 .valid {
     display: none;
     font-size: 12px;
     color: deepskyblue;
-}
-.phone_item > div:nth-child(2) {
-    width: 500px;
-    background-color: rgba(0, 0, 0, 0);
-    padding-left: 0;
-    display: flex;
-}
-.email_item > div:nth-child(2) {
-    width: 500px;
-    background-color: rgba(0, 0, 0, 0);
-    padding-left: 0;
-    display: flex;
 }

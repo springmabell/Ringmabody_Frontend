@@ -23,7 +23,7 @@
     width: 200px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:flex-end;
 }
 .my_page_logo{
     color: white;
@@ -42,6 +42,31 @@
     height: 500px;
     /* border: solid 1px #999999; */
 }
+select {
+    width: 200px;
+    padding: .8em .5em;
+    border: 1px solid #999;
+    font-family: inherit;
+    background: url('../img/arrow.jpeg') no-repeat 95% 50%;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+select::-ms-expand {
+    display: none;
+}
+.manage-name {
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:7%; 
+}
+.total-num {
+    font-size: 20px;
+}
+
 a{
     text-decoration: none;
     outline: none;
@@ -57,7 +82,7 @@ a{
     line-height: 40px;
     color: #222222;
 }
-.menu_list li:nth-child(3) a {
+.menu_list li:nth-child(2) a {
     border: solid 1px rgb(123, 227, 251);
     background-color: rgb(123, 227, 251);
     color: white;
@@ -135,15 +160,34 @@ a{
     border: skyblue solid 1px;
     border-radius: 2px;
 }
-.bulletin-date {
-    height: 50px;
-    line-height: 50px;
-    padding: 20px;
-    padding-bottom: 0;
+
+div#page-num > ul {
+	list-style:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.bulletin-date-text {
-    font-size: 20px;
+div#page-num > ul li {
+	float:left;
 }
+div#page-num > ul li a {
+	float:left;
+	padding:4px;
+	margin-right:3px;
+	width:20px;
+	color:#000;
+	font:bold 12px tahoma;
+	border:1px solid #eee;
+	text-align:center;
+	text-decoration:none;
+}
+div#page-num > ul li a:hover, ul li a:focus {
+	color:#fff;
+	border:1px solid rgb(123, 227, 251);
+	background-color:rgb(123, 227, 251);
+}
+
+
 
 .valid {
     display: none;

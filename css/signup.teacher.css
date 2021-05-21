@@ -150,6 +150,34 @@ select {
     font-family: Dotum,'돋움',Helvetica,sans-serif;
 }
 
+/* 사용자 유형 라디오 버튼 css */ 
+
+.select {
+    padding: 15px 10px;
+}
+.select input[type=radio]{
+    display: none;
+}
+.select input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    height: 24px;
+    width: 90px;
+    border: 1px solid #333;
+    line-height: 24px;
+    text-align: center;
+    font-weight:bold;
+    font-size:13px;
+}
+.select input[type=radio]+label{
+    background-color: #fff;
+    color: #333;
+}
+.select input[type=radio]:checked+label{
+    background-color: #333;
+    color: #fff;
+}
+
 /* 에러메세지 */
 
 .error_next_box {
