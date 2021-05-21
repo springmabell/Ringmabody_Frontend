@@ -98,7 +98,7 @@ b {
     width: 160px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:flex-end;
     font-size: 20px;
 }
 
@@ -140,7 +140,7 @@ th, td {
 
 
 .manage-name {
-    height: 100px;
+    height: 80px;
     text-align: center;
     margin-top: 30px;
 }
