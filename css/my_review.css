@@ -23,9 +23,9 @@
     width: 200px;
     display: flex;
     align-items: center;
-    justify-content:flex-end;
+    justify-content: space-between;
 }
-.my_page_logo{
+span{
     color: white;
 }
 
@@ -57,7 +57,7 @@ a{
     line-height: 40px;
     color: #222222;
 }
-.menu_list li:nth-child(3) a {
+.menu_list li:nth-child(4) a {
     border: solid 1px rgb(123, 227, 251);
     background-color: rgb(123, 227, 251);
     color: white;
@@ -81,53 +81,46 @@ a{
 .total_count {
     transform: translate(-12px, 26px);
 }
-.detail_box{
-    width: 390px;
-    height: 315px;
-    padding: 10px;
-    margin-bottom: 12px;
+
+.review_box_top {
     text-align: center;
-    display: inline-block;
+    border-top: 1px solid grey;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: lightgray;
+    width: 830px;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+    display: flex;
 }
-.img_title_box{
-    position: relative;
-    width: 400px;
-    height: 180px;
+
+.review_box, .review_box_top {
+    width: 830px;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    font-size: 13px;
 }
-.sta{ /*스크랩 아이콘 별(꽉찬별)*/
-    position: absolute;
-    font-size: 30px;
-    left: 0;
-    color: rgb(123, 227, 251);
+.review_box{
     cursor: pointer;
 }
-.detail_img{
-    width: 280px;
-    height: 180px;
-    margin: 0 auto;
-    display: block;
+
+.review_rate_top, .review_date_top, .review_rec_top,
+.review_rate, .review_date, .review_rec{ /* 평점, 작성일, 추천수 */
+    text-align: center;
+    margin: 5px;
+    padding: 7px;
+    width: 150px;
 }
-.detail_title{
-    font-size: 20px;
-    font-weight: bold;
+.review_title_top, .review_title { /* 제목 */
+    text-align: center;
+    margin: 5px;
+    padding: 7px;
+    width: 450px;
 }
-.detail_info{
-    font-size: 15px;
-    display: inline;
-    line-height: 27px;
-}
-.post_paging_btn_wrap {
+
+.post_paging_btn_wrap { /* 페이지 수, 넘김 버튼*/
     margin-top: -30px;
     display: flex;
     justify-content: center;
-}
-.paging_btn {
-    width: 24px;
-    height: 24px;
-    margin: 0 4px;
-    outline: 0;
-    border: 0;
-    border-radius: 2px;
-    background-color: #EEEEEE;
-    cursor: pointer;
 }

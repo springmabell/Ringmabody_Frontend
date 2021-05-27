@@ -129,7 +129,7 @@ a{
     vertical-align: middle;
     text-align: center;
 }
-.review_button{
+.review_write_button{
     height: 60px;
     font-size: 20px;
     line-height: 60px;
@@ -140,4 +140,22 @@ a{
     border-radius: 4%;
     background-color: rgb(123, 227, 251);
     cursor: pointer;
+}
+.review_modify_button{
+    height: 60px;
+    font-size: 20px;
+    line-height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 4%;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.post_paging_btn_wrap {
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
 }
