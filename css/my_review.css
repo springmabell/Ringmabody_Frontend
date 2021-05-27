@@ -25,7 +25,7 @@
     align-items: center;
     justify-content: space-between;
 }
-.my_page_logo{
+span{
     color: white;
 }
 
@@ -57,7 +57,7 @@ a{
     line-height: 40px;
     color: #222222;
 }
-.menu_list li:nth-child(2) a {
+.menu_list li:nth-child(4) a {
     border: solid 1px rgb(123, 227, 251);
     background-color: rgb(123, 227, 251);
     color: white;
@@ -70,7 +70,6 @@ a{
     justify-content: space-between;
     border-bottom: solid 1px #999999;
 }
-
 .title_wrap {
     height: 50px;
     display: flex;
@@ -82,79 +81,45 @@ a{
 .total_count {
     transform: translate(-12px, 26px);
 }
-.detail_box{
-    height: 220px;
+
+.review_box_top {
+    text-align: center;
+    border-top: 1px solid grey;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: lightgray;
+    width: 830px;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+    display: flex;
+}
+
+.review_box, .review_box_top {
     width: 830px;
     padding: 5px;
     border-bottom: 1px solid grey;
     display: flex;
     font-size: 13px;
 }
-.detail_img{
-    margin: 35px 10px 35px 10px;
-    width: 200px;
-    height: 150px;
-    display: block;
-    background-size: cover;
-}
-.detail_title_box{
-    width: 400px;
-    height: 220px;
-}
-.detail_title{
-    width: 400px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    display: inline-block;
-    line-height: 50px;
-    vertical-align: middle;
-}
-.detail_info{
-    width: 400px;
-    height: 33px;
-    font-size: 15px;
-    display: block;
-    line-height: 30px;
-    vertical-align: middle;
-}
-.detail_pay_box{
-    width: 200px;
-    height: 220px;
-}
-.pay_date{
-    height: 160px;
-    font-size: 17px;
-    line-height: 160px;
-    vertical-align: middle;
-    text-align: center;
-}
-.review_write_button{
-    height: 60px;
-    font-size: 20px;
-    line-height: 60px;
-    vertical-align: middle;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    border-radius: 4%;
-    background-color: rgb(123, 227, 251);
-    cursor: pointer;
-}
-.review_modify_button{
-    height: 60px;
-    font-size: 20px;
-    line-height: 60px;
-    vertical-align: middle;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    border-radius: 4%;
-    background-color: lightgray;
+.review_box{
     cursor: pointer;
 }
 
-.post_paging_btn_wrap {
+.review_rate_top, .review_date_top, .review_rec_top,
+.review_rate, .review_date, .review_rec{ /* 평점, 작성일, 추천수 */
+    text-align: center;
+    margin: 5px;
+    padding: 7px;
+    width: 150px;
+}
+.review_title_top, .review_title { /* 제목 */
+    text-align: center;
+    margin: 5px;
+    padding: 7px;
+    width: 450px;
+}
+
+.post_paging_btn_wrap { /* 페이지 수, 넘김 버튼*/
     margin-top: -30px;
     display: flex;
     justify-content: center;

@@ -21,7 +21,7 @@
             </div>
             <div class="header_nav_logo_right">
                 <div class="header_nav_login">
-                    <a href="">김프링 회원님</a>
+                    <span>김프링 회원님</span>
                     <i class="fas fa-chevron-down"></i>
                 </div>
             </div>
@@ -32,10 +32,10 @@
         <div class="content_wrap">
             <div class="menu">
                 <ul class="menu_list">
-                    <li><a href="#">개인정보 관리</a></li>
-                    <li><a href="#">결제한 내역</a></li>
-                    <li><a href="#">스크랩</a></li>
-                    <li><a href="#">작성한 리뷰</a></li>
+                    <li><a href="my_info.html">개인정보 관리</a></li>
+                    <li><a href="my_purchase.html">결제한 내역</a></li>
+                    <li><a href="my_scrap.html">스크랩</a></li>
+                    <li><a href="my_review.html">작성한 리뷰</a></li>
                 </ul>
             </div>
             <div class="content">
@@ -58,7 +58,10 @@
                                     <!--게시글 리스트-->
                                     <div class="post_list">
                                         <div class='detail_box'>
-                                            <img class='detail_img' src="../img/yoga.jpg"><br></img>
+                                            <div class="img_title_box">
+                                                <span class="sta"><i class="far fa-star default-star"></i></span>
+                                                <img class='detail_img' src="../img/yoga.jpg"><br></img>
+                                            </div>
                                             <div class="detail_title_box">
                                                 <p class='detail_info detail_category'>요가/필라테스</p>
                                                 <p class='detail_title'>필라테스 함께해요~ 바른 자세 만들어요</p>
@@ -70,7 +73,10 @@
                                         </div>
 
                                         <div class='detail_box'>
-                                            <img class='detail_img' src="../img/zumba.jpg"><br></img>
+                                            <div class="img_title_box">
+                                                <span class="sta"><i class="fas fa-star full-star"></i></span>
+                                                <img class='detail_img' src="../img/zumba.jpg"><br></img>
+                                            </div>
                                             <div class="detail_title_box">
                                                 <p class='detail_info detail_category'>줌바/스피닝</p>
                                                 <p class='detail_title'>지방 털기 끝판왕!!! 줌바 수업에 참여</p>
@@ -82,7 +88,10 @@
                                         </div>
 
                                         <div class='detail_box'>
-                                            <img class='detail_img' src="../img/zumba.jpg"><br></img>
+                                            <div class="img_title_box">
+                                                <span class="sta"><i class="fas fa-star full-star"></i></span>
+                                                <img class='detail_img' src="../img/zumba.jpg"><br></img>
+                                            </div>
                                             <div class="detail_title_box">
                                                 <p class='detail_info detail_category'>줌바/스피닝</p>
                                                 <p class='detail_title'>지방 털기 끝판왕!!! 줌바 수업에 참여</p>
@@ -94,7 +103,10 @@
                                         </div>
 
                                         <div class='detail_box'>
-                                            <img class='detail_img' src="../img/zumba.jpg"><br></img>
+                                            <div class="img_title_box">
+                                                <span class="sta"><i class="fas fa-star full-star"></i></span>
+                                                <img class='detail_img' src="../img/zumba.jpg"><br></img>
+                                            </div>
                                             <div class="detail_title_box">
                                                 <p class='detail_info detail_category'>줌바/스피닝</p>
                                                 <p class='detail_title'>지방 털기 끝판왕!!! 줌바 수업에 참여</p>
@@ -110,6 +122,11 @@
                             </div>
                         </section>
                     </div>
+
+                    <div class="paging_btn_wrap">
+                        <div class="post_paging_btn_wrap"></div>
+                    </div>
+
                 </form>
             </div>
         </div>
@@ -119,6 +136,8 @@
 
 </div><!--end wrap-->
 
+<script src="../js/jquery.js"></script>
+<script src="../js/my_scrap.js"></script>
 
 
 </body>
